@@ -1,7 +1,7 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');     //aceitar acento php
+header('Content-Type: text/html; charset=utf-8');
 
-require_once("Usuarios.php");
+require_once("model/Usuarios.php");
 
 $Usuarios = new Usuarios();
 
@@ -19,7 +19,7 @@ $listaUsuarios = $Usuarios->listar_todos();
     <title>Projeto CRUD</title>
 
     <!-- icone na janela do navegador-->
-    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
 
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -31,25 +31,7 @@ $listaUsuarios = $Usuarios->listar_todos();
     <link href="fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
 
     <!-- style css -->
-
-    <style type="text/css">
-        body{
-            margin: 20px;
-            background-color: whitesmoke;
-        }
-
-        *{
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        h2{
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .thead{
-            background-color: #f7f7f7;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -110,13 +92,7 @@ $listaUsuarios = $Usuarios->listar_todos();
                 </tbody>
             </table>
         </div>
-
-
     </div>
-
-
-
-<!-- Jquery e JqueryMask    -->
 
 </body>
 </html>

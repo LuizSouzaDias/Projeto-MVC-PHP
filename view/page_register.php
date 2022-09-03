@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');     //aceitar acento php
-require_once("../Usuarios.php");
+require_once("../model/Usuarios.php");
 $Usuarios = new Usuarios();
 
 if( isset($_POST['salvar'])){
